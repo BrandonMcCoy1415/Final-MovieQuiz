@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Movie Quiz</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Cinzel+Decorative:700" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class='header'>
+      <h1>Which Movie Should You Watch?</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Documentation.html">Documentation</a></li>
+      </ul>
+    </nav>
+  </div>
+
+    <div class='main'>
+      <div class='article'>
+        <h2>How Would You Best Describe Your Mood?</h2>
+        <form action="/api" method="post">
+          <ul class="flex-outer">
+            <ul>
+              <button type="happy" name="happy" id="happy">Happy</button>
+            </ul>
+            <ul>
+                <button type="gloomy" name="gloomy" id="gloomy">Gloomy</button>
+            </ul>
+            <ul>
+                <button type="anxious" name="anxious" id="anxious">Anxious</button>
+            </ul>
+            <ul>
+                <button type="relaxed" name="relaxed" id="relaxed">Relaxed</button>
+            </ul>
+            <ul>
+                <button type="bored" name="bored" id="bored">Bored</button>
+            </ul>
+            <ul>
+                <button type="combo" name="combo" id="combo">Combo</button>
+            </ul>
+            <ul>
+              <button type="next" name="next" id="next"><a href= "Quiz3.html">Next</a></button>
+              <button type="back" name="back" id="back"><a href="Quiz1.html">Back</a></button>
+            </ul>
+          </ul>
+        </form>
+        </div>
+    </div>
+  </body>
+</html>
