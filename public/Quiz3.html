@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Movie Quiz</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Cinzel+Decorative:700" rel="stylesheet">
+    <link href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
   </head>
 
@@ -21,24 +22,51 @@
 
     <div class='main'>
       <div class='article'>
-        <h2>Results</h2>
+        <h2>What decade(s) of movie do you prefer?</h2>
         <form action="/api" method="post">
-          <ul class="flex-outer">
+            <li>
+                <ul class="flex-inner">
+                    <li>
+                        <input type="checkbox" id="fifties">
+                        <label for="fifties">50s</label>
+                      </li>
+                    <li>
+                        <input type="checkbox" id="sixties">
+                        <label for="sixties">60s</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="seventies">
+                        <label for="seventies">70s</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="eighties">
+                        <label for="eighties">80s</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="nineties">
+                        <label for="nineties">90s</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="two-thousands">
+                        <label for="two-thousands">2000s</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="two-thousand-tens">
+                        <label for="two-thousand-tens">2010s</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="two-thousand-twenties">
+                        <label for="two-thousand-twenties">2020s</label>
+                      </li>
+                </ul>
+              </li>
             <ul>
-                <label for="result1">Result 1</label> 
-            </ul>
-            <ul>
-                <label for="result2">Result 2</label> 
-            </ul>
-            <ul>
-                <label for="result3">Result 3</label>
-            </ul>
-            <ul>
-              <button type="retake" name="retake" id="retake"><a href= "index.html">Take Quiz Again?</a></button>
+              <button type="next" name="next" id="next"><a href= "Resultshtml">Next</a></button>
+              <button type="back" name="back" id="back"><a href="Quiz2.html">Back</a></button>
             </ul>
           </ul>
         </form>
-      </div>
+        </div>
     </div>
   </body>
 </html>
