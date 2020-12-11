@@ -75,16 +75,17 @@
       }
       // Return the array if it is non-empty, or null
       if (checkboxesChecked[0].id == "English") {
-          localStorage.setItem("Language", "English"); 
+          window.localStorage.setItem("Language", "English"); 
       }else if (checkboxesChecked[0].id == "Spanish") {
-          localStorage.setItem("Language", "Spanish");
+          window.localStorage.setItem("Language", "Spanish");
       }else if(checkboxesChecked[0].id == "French"){
-          localStorage.setItem("Language", "French");
+          window.localStorage.setItem("Language", "French");
       }else if(checkboxesChecked[0].id == "Mandarin"){
-          localStorage.setItem("Language", "Mandarin");
+          window.localStorage.setItem("Language", "Mandarin");
       }else if(checkboxesChecked[0].id == "Other"){
-          localStorage.setItem("Language", "Other");
+          window.localStorage.setItem("Language", "Other");
       }
     }</script>
+     <script src="script.js"></script>
   </body>
 </html>
