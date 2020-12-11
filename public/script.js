@@ -51,3 +51,8 @@ const btn = document.querySelectorAll('input[id = "results"] :checked');
 btn.addEventListener('click', (event) => {
     alert(getSelectedCheckboxValues('checkbox'));
 });
+
+function getInput() {
+    var input = document.getElementsByClassName("userInput");
+    alert(input);
+}
