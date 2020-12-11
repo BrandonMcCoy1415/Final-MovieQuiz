@@ -27,39 +27,61 @@
             <li>
                 <ul class="flex-inner">
                     <li>
-                        <input type="checkbox" id="English">
+                        <input type="checkbox" id="English" name ="language">
                         <label for="English">English</label>
                       </li>
                     <li>
-                        <input type="checkbox" id="Spanish">
+                        <input type="checkbox" id="Spanish" name ="language">
                         <label for="Spanish">Spanish</label>
                       </li>
                       <li>
-                        <input type="checkbox" id="French">
+                        <input type="checkbox" id="French" name ="language">
                         <label for="French">French</label>
                       </li>
                       <li>
-                        <input type="checkbox" id="Portuguese">
+                        <input type="checkbox" id="Portuguese" name ="language">
                         <label for="Portuguese">Portuguese</label>
                       </li>
                       <li>
-                        <input type="checkbox" id="Mandarin">
+                        <input type="checkbox" id="Mandarin" name ="language">
                         <label for="Mandarin">Mandarin</label>
                       </li>
                       <li>
-                        <input type="checkbox" id="Other">
+                        <input type="checkbox" id="Other" name ="language">
                         <label for="Other">Other</label>
                       </li>
                 </ul>
               </li>
             <ul>
-              <button type="next" name="next" id="next"><a href= "Results.html">Next</a></button>
+              <button type="next" name="next" onclick="getCheckedBoxes('language')" id="next"><a href= "Results.html">Next</a></button>
               <button type="back" name="back" id="back"><a href="Quiz4.html">Back</a></button>
             </ul>
           </ul>
         </form>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script> function getCheckedBoxes(chkboxName) {
+      var checkboxes = document.getElementsByName(chkboxName);
+      var checkboxesChecked = [];
+      // loop over them all
+      for (var i=0; i<checkboxes.length; i++) {
+         // And stick the checked ones onto an array...
+         if (checkboxes[i].checked) {
+            checkboxesChecked.push(checkboxes[i]);
+         }
+      }
+      // Return the array if it is non-empty, or null
+      if (checkboxesChecked[0].id == "English") {
+          localStorage.setItem("Language", "English"); 
+      }else if (checkboxesChecked[0].id == "Spanish") {
+          localStorage.setItem("Language", "Spanish");
+      }else if(checkboxesChecked[0].id == "French"){
+          localStorage.setItem("Language", "French");
+      }else if(checkboxesChecked[0].id == "Mandarin"){
+          localStorage.setItem("Language", "Mandarin");
+      }else if(checkboxesChecked[0].id == "Other"){
+          localStorage.setItem("Language", "Other");
+      }
+    }</script>
   </body>
 </html>
