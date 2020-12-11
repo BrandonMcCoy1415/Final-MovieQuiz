@@ -39,7 +39,6 @@ function getSelectedCheckboxValues(type) {
         values.push(checkbox.value);
     });
     return values;
-
 }
 const preferences = getSelectedCheckboxValues('checkbox')
 console.log(preferences)
