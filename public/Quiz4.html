@@ -70,16 +70,17 @@
       }
       // Return the array if it is non-empty, or null
       if (checkboxesChecked[0].id == "Babies") {
-          localStorage.setItem("Rated", "G"); 
+          window.localStorage.setItem("Rated", "G"); 
       }else if (checkboxesChecked[0].id == "Little Kids") {
-          localStorage.setItem("Rated", "G");
+          window.localStorage.setItem("Rated", "G");
       }else if(checkboxesChecked[0].id == "Pre-teens"){
-          localStorage.setItem("Rated", "PG");
+          window.localStorage.setItem("Rated", "PG");
       }else if(checkboxesChecked[0].id == "Teens"){
-          localStorage.setItem("Rated", "PG-13");
+          window.localStorage.setItem("Rated", "PG-13");
       }else if(checkboxesChecked[0].id == "Adults"){
-          localStorage.setItem("Rated", "R");
+          window.localStorage.setItem("Rated", "R");
       }
     }</script>
+     <script src="script.js"></script>
   </body>
 </html>
