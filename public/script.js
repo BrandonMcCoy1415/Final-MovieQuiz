@@ -32,22 +32,23 @@
 //2010s - movies from 2010-2019
 //2020s - movies from 2020
 
-function getSelectedCheckboxValues(id) {
-    const checkboxes = document.querySelectorAll(`input[id="${id}"]:checked`);
+function getSelectedCheckboxValues(type) {
+    const checkboxes = document.querySelectorAll(`input[type="${type}"]:checked`);
     let values = [];
     checkboxes.forEach((checkbox) => {
         values.push(checkbox.value);
     });
     return values;
-    
+
 }
+const preferences = getSelectedCheckboxValues('checkbox')
+console.log(preferences)
 
 
 
 
 
-
-const btn = document.querySelector('#btn');
+const btn = document.querySelectorAll('input[id = "results"] :checked');
 btn.addEventListener('click', (event) => {
-    alert(getSelectedCheckboxValues('color'));
+    alert(getSelectedCheckboxValues('checkbox'));
 });
