@@ -30,6 +30,17 @@
           <ul class="flex-outer">
             <ul>
               <label for="entry1">1</label>
+ Brandon's-Edits
+              <input type="text" name="entry" id="entry1" maxlength="140" >
+            </ul>
+            <ul>
+              <label for="entry2">2</label>
+              <input type="text" name="entry" id="entry2" maxlength="140" >
+            </ul>
+            <ul>
+              <label for="entry3">3</label>
+              <input type="text" name="entry" id="entry3" maxlength="140" >
+
               <input class="userInput" type="text" name="entry1" id="entry1" maxlength="140" >
             </ul>
             <ul>
@@ -39,15 +50,24 @@
             <ul>
               <label for="entry3">3</label>
               <input class="userInput" type="text" name="entry3" id="entry3" maxlength="140">
+
             </ul>
             <ul>
-              <button type="next" name="next" id="next"><a href= "Quiz2.html">Next</a></button>
+              <button type ="submit" name = "submit"> submit</button>
+              <button type="next" name="next" onclick="getNames()" id="next"><a href= "Quiz2.html">Next</a></button>
               <button type="back" name="back" id="back"><a href="index.html">Back</a></button>
             </ul>
           </ul>
         </form>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script> function getNames() {
+      var name1 = document.getElementById("entry1");
+      var name2 = document.getElementById("entry2");
+      var name3 = document.getElementById("entry3");
+      localStorage.setItem("Name1", String(name1))
+      localStorage.setItem("Name2", String(name2))
+      localStorage.setItem("Name3", String(name3))
+    }</script>
   </body>
 </html>
