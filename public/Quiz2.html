@@ -68,19 +68,20 @@
           }
           // Return the array if it is non-empty, or null
           if (checkboxesChecked[0].id == "Happy") {
-              localStorage.setItem("Genre", "Comedy, Action, Drama, Sci-Fi, Musical, Family"); 
+              window.localStorage.setItem("Genre", "Comedy, Action, Drama, Sci-Fi, Musical, Family"); 
           }else if (checkboxesChecked[0].id == "Gloomy") {
-              localStorage.setItem("Genre", "comedy, action, adventure, romance, sci-fi, musical, family");
+              window.localStorage.setItem("Genre", "comedy, action, adventure, romance, sci-fi, musical, family");
           }else if(checkboxesChecked[0].id == "Anxious"){
-              localStorage.setItem("Genre", "comedy, action, adventure, musical, family");
+              window.localStorage.setItem("Genre", "comedy, action, adventure, musical, family");
           }else if(checkboxesChecked[0].id == "Relaxed"){
-              localStorage.setItem("Genre", "documentary, romance, drama");
+              window.localStorage.setItem("Genre", "documentary, romance, drama");
           }else if(checkboxesChecked[0].id == "Bored"){
-              localStorage.setItem("Genre", "action, comedy, horror, thriller, sci-fi");
+              window.localStorage.setItem("Genre", "action, comedy, horror, thriller, sci-fi");
           }else if(checkboxesChecked[0].id == "Combo"){
               
           }
         }</script>
+        <script src="script.js"></script>
         </div>
     </div>
     

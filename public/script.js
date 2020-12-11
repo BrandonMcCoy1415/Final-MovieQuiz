@@ -33,52 +33,5 @@
 //2020s - movies from 2020
 
 
-//Does this function work?
-/* 
-function getSelectedCheckboxValues(id) {
-    const checkboxes = document.querySelectorAll(`input[id="${id}"]:checked`);
-    let values = [];
-    checkboxes.forEach((checkbox) => {
-        values.push(checkbox.value);
-    });
-    console.log(values);
-    return values;
-} */
+console.log(window.localStorage)
 
-var myGenre = [];
-
-function getCheckedBoxes(chkboxName) {
-    var checkboxes = document.getElementsByName(chkboxName);
-    var checkboxesChecked = [];
-    // loop over them all
-    for (var i=0; i<checkboxes.length; i++) {
-       // And stick the checked ones onto an array...
-       if (checkboxes[i].checked) {
-          checkboxesChecked.push(checkboxes[i]);
-       }
-    }
-    // I'm assuming they are expected to only select one option considering we have the "Combo" option right? - BM
-    // I also could not figure out how to call the function from an external script so this function is copied directly into the Quiz2 html - BM
-    if (checkboxesChecked[0].id == "Happy") {
-        localStorage.setItem("Genre", "Comedy, Action, Drama, Sci-Fi, Musical, Family") 
-    }else if (checkboxesChecked[0].id =="Gloomy") {
-        localStorage.setItem("Genre", "comedy, action, adventure, romance, sci-fi, musical, family" )
-    }else if(checkboxesChecked[0].id == "Anxious"){
-        localStorage.setItem("Genre", "comedy, action, adventure, musical, family" )
-    }else if(checkboxesChecked[0].id == "Relaxed"){
-        localStorage.setItem("Genre", "documentary, romance, drama" )
-    }else if(checkboxesChecked[0].id == "Bored"){
-        localStorage.setItem("Genre", "action, comedy, horror, thriller, sci-fi" )
-    }else if(checkboxesChecked[0].id == "Combo"){
-        
-    }
-  }
-  
-  // Call as
-  console.log(myGenre)
-
-
-/*const btn = document.querySelector('#btn');
-btn.addEventListener('click', (event) => {
-    alert(getSelectedCheckboxValues('color'));
-}); */
