@@ -32,18 +32,22 @@
 //2010s - movies from 2010-2019
 //2020s - movies from 2020
 
+Brandon's-Edits
 
 //Does this function work?
 /* 
 function getSelectedCheckboxValues(id) {
     const checkboxes = document.querySelectorAll(`input[id="${id}"]:checked`);
+
     let values = [];
     checkboxes.forEach((checkbox) => {
         values.push(checkbox.value);
     });
     console.log(values);
     return values;
+ Brandon's-Edits
 } */
+
 
 var myGenre = [];
 
@@ -77,8 +81,10 @@ function getCheckedBoxes(chkboxName) {
   // Call as
   console.log(myGenre)
 
+ Brandon's-Edits
 
 /*const btn = document.querySelector('#btn');
 btn.addEventListener('click', (event) => {
     alert(getSelectedCheckboxValues('color'));
 }); */
+

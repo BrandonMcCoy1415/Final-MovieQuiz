@@ -5,6 +5,8 @@ import express from 'express';
 import dotenv from 'dotenv';
 import fetch from 'node-fetch';
 
+
+
 dotenv.config();
 
 const app = express();
@@ -29,7 +31,7 @@ app.route('/api')
     console.log('POST request detected');
     console.log('Form data in res.body', req.body);
     
-    const data = await fetch('http://www.omdbapi.com/?apikey=cbbfe5ee&');
+    const data = await fetch('https://api.themoviedb.org/3/movie/550?api_key=1cce00215acdebdfc5ffb448595a204a');
     const json = data.json();
     console.log('data from fetch', json);
     res.json(json);
@@ -38,3 +40,5 @@ app.route('/api')
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}!`);
 });
+
+
