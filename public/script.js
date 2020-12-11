@@ -87,7 +87,4 @@ function getCheckedBoxes(chkboxName) {
 btn.addEventListener('click', (event) => {
     alert(getSelectedCheckboxValues('color'));
 }); */
-function getInput() {
-    var input = document.getElementsByClassName("userInput");
-    alert(input);
-}
+
