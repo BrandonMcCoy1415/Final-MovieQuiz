@@ -120,6 +120,7 @@ nav a, nav span {
 
 .main {
   display: flex;
+  flex-direction: column;
 }
 
 .article, .section {
