@@ -36,6 +36,7 @@
                 <label for="result3">Result 3</label>
             </ul>
             <ul>
+              <button type="button" name=results onclick="displayMatches()">Show Results</button>
               <button type="retake" name="retake" onclick="window.localStorage.clear()" id="retake"><a href= "index.html">Take Quiz Again?</a></button>
             </ul>
           </ul>
@@ -47,9 +48,14 @@
     <script> 
       theMovieDb.discover.getMovies({}, successCB, errorCB);
       function displayMatches() {
-        var results = JSON.parse(window.localStorage.getItem("Data"));
-        result1.innerhtml = results.name
+        var results_json = JSON.parse(window.localStorage.getItem("Data"));
+        result1.innerHTML = results_json.results[0].title + " " + results_json.results[0].release_date;
+        result2.innerHTML = results_json.results[1].title + " " + results_json.results[1].release_date;
+        result3.innerHTML = results_json.results[2].title + " " + results_json.results[2].release_date;
       }
+      const result1 = document.querySelector('.result1');
+      const result2 = document.querySelector('.result2');
+      const result3 = document.querySelector('.result3');
     </script>
   </body>
 </html>
