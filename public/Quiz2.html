@@ -25,7 +25,7 @@
       <div class='article'>
         <h2>How Would You Best Describe Your Mood?</h2>
         <form action="/api" method="post">
-          <ul class="flex-outer">
+          <div class="container">
             <ul>
               <input type="checkbox" id="Happy" name="mood">
               <label for="Happy">Happy</label>
@@ -54,7 +54,7 @@
               <button type="next" name="next" onclick="getCheckedBoxes('mood')" id="next"><a href= "Quiz3.html">Next</a></button>
               <button type="back" name="back" id="back"><a href="index.html">Back</a></button>
             </ul>
-          </ul>
+          </div>
         </form>
         <script src="script.js"></script>
         <script src="moviedb.js"></script>
@@ -70,15 +70,15 @@
           }
           // Return the array if it is non-empty, or null
           if (checkboxesChecked[0].id == "Happy") {
-              localStorage.setItem("Genre", "Comedy, Action, Drama, Sci-Fi, Musical, Family"); 
+              window.localStorage.setItem("Genre", "Comedy, Action, Drama, Sci-Fi, Musical, Family"); 
           }else if (checkboxesChecked[0].id == "Gloomy") {
-              localStorage.setItem("Genre", "comedy, action, adventure, romance, sci-fi, musical, family");
+              window.localStorage.setItem("Genre", "comedy, action, adventure, romance, sci-fi, musical, family");
           }else if(checkboxesChecked[0].id == "Anxious"){
-              localStorage.setItem("Genre", "comedy, action, adventure, musical, family");
+              window.localStorage.setItem("Genre", "comedy, action, adventure, musical, family");
           }else if(checkboxesChecked[0].id == "Relaxed"){
-              localStorage.setItem("Genre", "documentary, romance, drama");
+              window.localStorage.setItem("Genre", "documentary, romance, drama");
           }else if(checkboxesChecked[0].id == "Bored"){
-              localStorage.setItem("Genre", "action, comedy, horror, thriller, sci-fi");
+              window.localStorage.setItem("Genre", "action, comedy, horror, thriller, sci-fi");
           }else if(checkboxesChecked[0].id == "Combo"){
               
           }

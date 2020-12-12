@@ -129,12 +129,106 @@ nav a, nav span {
   padding: 10%;
 }
 
-.flex-outer {
+.flex-outer  {
   text-align: center;
   align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container {
+  display: inline-flexbox;
+  flex-direction: column;
+  justify-content: left;
+  align-self: center;
+
 }
 
-.footer {
-  margin-top: 10px;
+
+ul {
+  text-align: left center;
+  align-content: left center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
 }
 
+
+button {
+        justify-content: center;
+        display: inline;
+        background-color: #bc9fe6;
+        border-radius: 10px;
+        border: 4px double #cccccc;
+        color: #eeeeee;
+        text-align: center;
+        font-size: 28px;
+        padding: 10px;
+        width: 100px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+}
+
+input[type="checkbox"]{
+    justify-content: left;
+    display: flexbox;
+    align-self: flex-start;
+    flex-direction: column;
+    background-color: #bc9fe6;
+    border-radius: 10px;
+    padding: 10px;
+    border: 4px double #cccccc;
+    width: 100px;
+    margin: 20px 100px;
+    position: relative;
+}
+
+label[for = "Happy"], label[for = "Gloomy"], label[for = "Anxious"], label[for = "Relaxed"], label[for = "Bored"], label[for = "Combo"] {
+  
+  flex-direction: column;
+  display: inline-flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 50px;
+  font-family: 'Patua One', cursive;
+  text-align: left;
+  position: static;
+
+}
+
+label[for = "fifties"], label[for = "sixties"], label[for = "seventies"], label[for = "eighties"], label[for = "nineties"], label[for = "two-thousands"], label[for = "two-thousand-tens"],label[for = "two-thousand-twenties"]  {
+  
+  flex-direction: column;
+  display: inline-flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 50px;
+  font-family: 'Patua One', cursive;
+  text-align: left;
+  position: static;
+
+}
+label[for = "Babies"], label[for = "Little Kids"], label[for = "Pre-teens"], label[for = "Teens"], label[for = "Adults"]{
+  
+  flex-direction: column;
+  display: inline-flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 50px;
+  font-family: 'Patua One', cursive;
+  text-align: left;
+  position: static;
+
+}
+label[for = "result1"], label[for = "result2"], label[for = "result3"] {
+  
+  flex-direction: column;
+  display: inline-flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 50px;
+  font-family: 'Patua One', cursive;
+  text-align: left;
+  position: static;
+
+}

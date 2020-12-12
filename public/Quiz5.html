@@ -24,40 +24,38 @@
       <div class='article'>
         <h2>What language should the movie be in?</h2>
         <form action="/api" method="post">
-            <li>
-                <ul class="flex-inner">
-                    <li>
+           
+                <div class="container">
+                      <ul>
                         <input type="checkbox" id="English" name ="language">
                         <label for="English">English</label>
-                      </li>
-                    <li>
+                      </ul>
+                      <ul>
                         <input type="checkbox" id="Spanish" name ="language">
                         <label for="Spanish">Spanish</label>
-                      </li>
-                      <li>
+                      </ul>
+                      <ul>
                         <input type="checkbox" id="French" name ="language">
                         <label for="French">French</label>
-                      </li>
-                      <li>
+                      </ul>
+                      <ul>
                         <input type="checkbox" id="Portuguese" name ="language">
                         <label for="Portuguese">Portuguese</label>
-                      </li>
-                      <li>
+                      </ul>
+                      <ul>
                         <input type="checkbox" id="Mandarin" name ="language">
                         <label for="Mandarin">Mandarin</label>
-                      </li>
-                      <li>
+                      </ul>
+                      <ul>
                         <input type="checkbox" id="Other" name ="language">
                         <label for="Other">Other</label>
-                      </li>
-                </ul>
-              </li>
-            <ul>
-              <button type="next" name="next" onclick="getCheckedBoxes('language')" id="next"><a href= "Results.html">Next</a></button>
-
-              <button type="back" name="back" id="back"><a href="Quiz4.html">Back</a></button>
-            </ul>
-          </ul>
+                      </ul>
+                      <ul>
+                        <button type="next" name="next" onclick="getCheckedBoxes('language')" id="next"><a href= "Results.html">Next</a></button>
+          
+                        <button type="back" name="back" id="back"><a href="Quiz4.html">Back</a></button>
+                      </ul>
+                    </div>
         </form>
         </div>
     </div>
@@ -75,15 +73,15 @@
       }
       // Return the array if it is non-empty, or null
       if (checkboxesChecked[0].id == "English") {
-          localStorage.setItem("Language", "English"); 
+        window.localStorage.setItem("Language", "English"); 
       }else if (checkboxesChecked[0].id == "Spanish") {
-          localStorage.setItem("Language", "Spanish");
+        window.localStorage.setItem("Language", "Spanish");
       }else if(checkboxesChecked[0].id == "French"){
-          localStorage.setItem("Language", "French");
+        window.localStorage.setItem("Language", "French");
       }else if(checkboxesChecked[0].id == "Mandarin"){
-          localStorage.setItem("Language", "Mandarin");
+        window.localStorage.setItem("Language", "Mandarin");
       }else if(checkboxesChecked[0].id == "Other"){
-          localStorage.setItem("Language", "Other");
+        window.localStorage.setItem("Language", "Other");
       }
     }</script>
   </body>
