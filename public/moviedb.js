@@ -19,8 +19,8 @@ function errorCB(data) {
     };
 theMovieDb.common = {
   api_key: "1cce00215acdebdfc5ffb448595a204a",
-  base_uri: "http://api.themoviedb.org/3/",
-  images_uri: "http://image.tmdb.org/t/p/",
+  base_uri: "https://api.themoviedb.org/3/",
+  images_uri: "https://image.tmdb.org/t/p/",
   timeout: 5000,
   language: "en-US",
   sort_by: "primary_release_date.desc",
