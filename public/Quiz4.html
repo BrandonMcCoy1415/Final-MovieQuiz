@@ -24,34 +24,35 @@
       <div class='article'>
         <h2>Ages of watchers?</h2>
         <form action="/api" method="post">
-            
-                <div class="container">
-                      <ul>
-                        <input type="checkbox" id="Babies" name="age">
+            <li>
+                <ul class="flex-inner">
+                    <li>
+                        <input type="radio" id="Babies" name="age">
                         <label for="Babies">Babies</label>
-                      </ul>
-                      <ul>
-                        <input type="checkbox" id="Little Kids" name="age">
+                      </li>
+                    <li>
+                        <input type="radio" id="Little Kids" name="age">
                         <label for="Little Kids">Little kids (3-10)</label>
-                      </ul>
-                      <ul>
-                        <input type="checkbox" id="Pre-teens" name="age">
+                      </li>
+                      <li>
+                        <input type="radio" id="Pre-teens" name="age">
                         <label for="Pre-teens">Pre-teens (10-12)</label>
-                      </ul>
-                      <ul>
-                        <input type="checkbox" id="Teens" name="age">
+                      </li>
+                      <li>
+                        <input type="radio" id="Teens" name="age">
                         <label for="Teens">Teens (13-17)</label>
-                      </ul>
-                      <ul>
-                        <input type="checkbox" id="Adults" name="age">
+                      </li>
+                      <li>
+                        <input type="radio" id="Adults" name="age">
                         <label for="Adults">Adults (18 and up)</label>
-                      </ul>
-                      <ul>
-                        <button type="next" name="next" onclick="getCheckedBoxes('age')" id="next"><a href= "Quiz5.html">Next</a></button>
-                        <button type="back" name="back" id="back"><a href="Quiz3.html">Back</a></button>
-                      </ul>
-            
-                  </div>
+                      </li>
+                </ul>
+              </li>
+            <ul>
+              <button type="next" name="next" onclick="getCheckedBoxes('age')" id="next"><a href= "Results.html">Next</a></button>
+              <button type="back" name="back" id="back"><a href="Quiz3.html">Back</a></button>
+            </ul>
+          </ul>
         </form>
         </div>
     </div>
