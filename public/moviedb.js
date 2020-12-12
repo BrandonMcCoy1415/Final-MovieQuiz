@@ -9,18 +9,36 @@
 
 var theMovieDb = {};
 
+function successCB(data) {
+  console.log("Success callback: " + data);
+  window.localStorage.setItem("Data", data);
+};
+        
+function errorCB(data) {
+        	console.log("Error callback: " + data);
+    };
 theMovieDb.common = {
   api_key: "1cce00215acdebdfc5ffb448595a204a",
   base_uri: "http://api.themoviedb.org/3/",
   images_uri: "http://image.tmdb.org/t/p/",
   timeout: 5000,
   language: "en-US",
+  sort_by: "primary_release_date.desc",
+  certification_country: "US",
+  certification: window.localStorage.getItem("Rated"),
+  year: window.localStorage.getItem("Year"),
+  genres: window.localStorage.getItem("Genre"),
+
+  // Added additional default options such as certification_country - BM
   generateQuery: function(options) {
     'use strict';
     var myOptions, query, option;
 
     myOptions = options || {};
-    query = "?api_key=" + theMovieDb.common.api_key + "&language=" + theMovieDb.common.language;
+    query = "?api_key=" + theMovieDb.common.api_key + "&language=" + theMovieDb.common.language 
+          + "&sort_by=" + theMovieDb.common.sort_by + "&certification_country=" + theMovieDb.common.certification_country
+          + "&certification=" + theMovieDb.common.certification + "&include_adult=false&include_video=false&page=1"
+          + "&year=" + theMovieDb.common.year + "&with_genres=" + theMovieDb.common.genres;
 
     if (Object.keys(myOptions).length > 0) {
       for (option in myOptions) {

@@ -11,6 +11,9 @@
 //bored - action, comedy, horror, thriller, sci-fi
 //combo - no filter for genre
 
+// Action = 28, Adventure = 12, comedy = 35, drama = 18, sci-fi = 878, musical = 10402, family = 10751
+// romance = 10749, documentary = 99, horror = 27, thriller = 53
+
 
 //for age of watchers - filter the rating
 //babies - G

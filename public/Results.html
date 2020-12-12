@@ -25,13 +25,14 @@
         <h2>Results</h2>
         <form action="/api" method="post">
           <ul class="flex-outer">
-            <ul>
+            <ul class = result1>
                 <label for="result1">Result 1</label> 
+                
             </ul>
-            <ul>
+            <ul class = result2>
                 <label for="result2">Result 2</label> 
             </ul>
-            <ul>
+            <ul class = result3>
                 <label for="result3">Result 3</label>
             </ul>
             <ul>
@@ -41,7 +42,14 @@
         </form>
       </div>
     </div>
-    <script src="moviedb.js"></script>
+    <script type="text/javascript" src="moviedb.js"></script>
     <script src="script.js"></script>
+    <script> 
+      theMovieDb.discover.getMovies({}, successCB, errorCB);
+      function displayMatches() {
+        var results = JSON.parse(window.localStorage.getItem("Data"));
+        result1.innerhtml = results.name
+      }
+    </script>
   </body>
 </html>

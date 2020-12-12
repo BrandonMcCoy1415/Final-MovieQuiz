@@ -24,7 +24,7 @@
       
       <div class='article'>
         <h2>How Would You Best Describe Your Mood?</h2>
-        <form action="/api" method="post">
+        <form>
           <ul class="flex-outer">
             <ul>
               <input type="checkbox" id="Happy" name="mood">
@@ -47,10 +47,6 @@
               <label for="Bored">Bored</label>
             </ul>
             <ul>
-              <input type="checkbox" id="Combo" name="mood">
-              <label for="Combo">Combo</label>
-            </ul>
-            <ul>
               <button type="next" name="next" onclick="getCheckedBoxes('mood')" id="next"><a href= "Quiz3.html">Next</a></button>
               <button type="back" name="back" id="back"><a href="index.html">Back</a></button>
             </ul>
@@ -69,18 +65,19 @@
              }
           }
           // Return the array if it is non-empty, or null
+          // Action = 28, Adventure = 12, comedy = 35, drama = 18, sci-fi = 878, musical = 10402, family = 10751
+          // romance = 10749, documentary = 99, horror = 27, thriller = 53
+
           if (checkboxesChecked[0].id == "Happy") {
-              window.localStorage.setItem("Genre", "Comedy, Action, Drama, Sci-Fi, Musical, Family"); 
+              window.localStorage.setItem("Genre", "35|28|18|878|10402|10751"); 
           }else if (checkboxesChecked[0].id == "Gloomy") {
-              window.localStorage.setItem("Genre", "comedy, action, adventure, romance, sci-fi, musical, family");
+              window.localStorage.setItem("Genre", "35|28|12|10749|878|10402|10751");
           }else if(checkboxesChecked[0].id == "Anxious"){
-              window.localStorage.setItem("Genre", "comedy, action, adventure, musical, family");
+              window.localStorage.setItem("Genre", "35|28|12|10402|10751");
           }else if(checkboxesChecked[0].id == "Relaxed"){
-              window.localStorage.setItem("Genre", "documentary, romance, drama");
+              window.localStorage.setItem("Genre", "99|10749|18");
           }else if(checkboxesChecked[0].id == "Bored"){
-              window.localStorage.setItem("Genre", "action, comedy, horror, thriller, sci-fi");
-          }else if(checkboxesChecked[0].id == "Combo"){
-              
+              window.localStorage.setItem("Genre", "28|35|27|53|878");
           }
         }</script>
 
