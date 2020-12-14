@@ -8,7 +8,7 @@
     <link href="styles.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body onload="displayMatches()">
     <div class='header'>
       <h1>Which Movie Should You Watch?</h1>
     <nav>
@@ -19,11 +19,10 @@
       </ul>
     </nav>
   </div>
-
     <div class='main'>
       <div class='article'>
         <h2>Results</h2>
-        <form action="/api" method="post">
+        <form>
           <ul class="flex-outer">
             <ul class = result1>
                 <label for="result1">Result 1</label> 
@@ -36,7 +35,6 @@
                 <label for="result3">Result 3</label>
             </ul>
             <ul>
-              <button type="button" name=results onclick="displayMatches()">Show Results</button>
               <button type="retake" name="retake" onclick="window.localStorage.clear()" id="retake"><a href= "index.html">Take Quiz Again?</a></button>
             </ul>
           </ul>
