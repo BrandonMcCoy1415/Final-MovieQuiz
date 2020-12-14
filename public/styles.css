@@ -229,7 +229,20 @@ label[for = "result1"], label[for = "result2"], label[for = "result3"] {
   padding-right: 20px;
   line-height: 50px;
   font-family: 'Patua One', cursive;
-  text-align: left;
+  text-align: center;
   position: static;
+
+}
+.result1, .result2, .result3 {
+  
+  flex-direction: column;
+  display: inline-flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 50px;
+  font-family: 'Patua One', cursive;
+  text-align: center;
+  position: static;
+  font-size: 35px;
 
 }
