@@ -35,8 +35,21 @@ The primary stakeholders include users of streaming services including but not l
 These streaming services themselves are also identified as stakeholders in that they provide the content users will engage with. [The Movie Database](https://www.themoviedb.org) serves as a stakeholder as they are providing the database being accessed by this web application.
 
 ## Data
+The data is retrived from a database of movies, TV shows and actor images provided by The Movie Database (TMDb). This application uses movie data to deliver results after sorting for the following features:
+* Genre
+* Year of Release
+* Language
+* Rating
+
+This information is retrieved based on user input in the quiz with the following relationships (quiz feature -> database feature):
+* Mood -> Genre
+* Decade of Release -> Year of Release
+* Language -> Language
+* Age of Watchers -> Rating
+
+
 ### API
-This project used The Movie Database (TMDb)
+This project used The Movie Database (TMDb) API
 * https://developers.themoviedb.org/3/getting-started/introduction
 
 ### Libraries
