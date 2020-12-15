@@ -11,23 +11,21 @@
 * Allison Siegel 
 
 ## Link to Application
-The web application is currently running on a Heroku Server
+The web application is currently running on a Heroku Server:
 * https://movie-quiz-final.herokuapp.com/
 
 ## Information Problem
-* Information Overload
-
-There is a large selection 
+There is a large selection of currently media avaialable on streaming services leading to Information Overload. This project seeks to solve this problem with a simple web application aimed at users seeking a movie to watch. Decision-making and discovery is hindered by information overload due to the sheer amount of content over multiple platforms. With this application the time spent deciding which movie to watch can be reduced with an easy to use quiz focusing on the user's mood. The ultimate goal of the application is to ease information overload with a lightwweight application to quickly recommend movies targeted by mood and preferences of the user. 
 
 ## Identified stakeholders/target browsers:
 ### Target Browsers:
 * Chrome 87
-* Firefox 83
+* Firefox 83 
 * Safari 14
 
 ### Stakeholders
 
-Stakeholders include users of streaming services including but not limited to:
+The primary stakeholders include users of streaming services including but not limited to:
 * Amazon Prime Video
 * Disney+
 * HBO Max
