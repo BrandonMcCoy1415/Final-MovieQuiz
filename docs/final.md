@@ -1,27 +1,35 @@
- # Title: What Movie to Watch Quiz
+# Final Report
+ 
+## Working Title: What Movie to Watch Quiz
 
- # Team members: 
- * Chris Davis, Allison Siegel, Brandon McCoy,
+## Team members: 
+* Samantha Barlage
+* Chris Davis 
+* Conner Houtman
+* Brandon McCoy
+* Musab Muhie
+* Allison Siegel 
 
-# Link to where your app is running: 
+## Link to Application
+The web application is currently running on a Heroku Server
 * https://movie-quiz-final.herokuapp.com/
 
-# Information problem you're trying to solve: 
+## Information Problem
 * Information Overload
 
-# Identified stakeholders/target browsers:
+## Identified stakeholders/target browsers:
 * 
 
-# Data you chose to work with
+## Data
 * Database containing info on movies
 
-# Chosen strategies and solutions for the problem
+## Strategies and Solutions
 
-# Technical system decision rationale
+## Technical System Decision
 
-# How/if your final system helps to address the problem
+## Has the Problem Been Addressed?
 
-# Challenges faced and impact on final design
+## Challenges
 * We realized that we needed to change API’s from The Open Movie Database to The Movie Database
     * The first API did not have all the functionality that we wanted
     * Could only search for by name of the movie or movie ID
@@ -31,7 +39,7 @@
     * Limitations of the new API such as only being able to search by individual years and actors requiring IDs
     * Struggled to balance between functionality of our application and how it looked on the frontend
 
-# Possible future work directions with this problem
+## Future Work
 * Display more metadata on each movie
 * Provide a cleaner and more visually attractive front-end for users
 
