@@ -1,6 +1,6 @@
 # Final Report
  
-## Working Title: WHICH MOVIE SHOULD YOU WATCH?
+## WHICH MOVIE SHOULD YOU WATCH?
 
 ## Team Members
 * Samantha Barlage
