@@ -43,6 +43,7 @@ This project used The Movie Database (TMDb)
 The application utilizes the The Movie DB (javascript library) 
 * Github Repository for [themoviedb-javascript-library](https://github.com/cavestri/themoviedb-javascript-library/) 
 * Credits to Franco Cavestri 
+* [Link to license as described verbatim below](https://github.com/cavestri/themoviedb-javascript-library/#licence)
 
 ### Library License
 
