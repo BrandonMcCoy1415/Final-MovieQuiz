@@ -26,14 +26,14 @@
         <form>
           <ul class="flex-outer">
             <ul class = result1>
-                <label for="result1">Result 1</label> 
+                
                 
             </ul>
             <ul class = result2>
-                <label for="result2">Result 2</label> 
+                
             </ul>
             <ul class = result3>
-                <label for="result3">Result 3</label>
+                
             </ul>
             <ul>
               <button type="button" name="results" onclick="displayMatches()">Show Results</button>
@@ -49,9 +49,13 @@
       theMovieDb.discover.getMovies({}, successCB, errorCB);
       function displayMatches() {
         var results_json = JSON.parse(window.localStorage.getItem("Data"));
+        if (results_json.total_pages == 0) {
+          result1.innerHTML = "Sorry, The Movie Database(TMDb) does not have any results that fit this category"
+        }else {
         result1.innerHTML = results_json.results[0].title + " " + results_json.results[0].release_date;
         result2.innerHTML = results_json.results[1].title + " " + results_json.results[1].release_date;
         result3.innerHTML = results_json.results[2].title + " " + results_json.results[2].release_date;
+        }
       }
       const result1 = document.querySelector('.result1');
       const result2 = document.querySelector('.result2');
