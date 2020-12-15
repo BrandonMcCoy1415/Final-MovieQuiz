@@ -12,17 +12,12 @@ Target Browsers:
 * Safari 14
 
 ## Table of Contents
-
 * [User Manual](#User-Manual)
-
 * [Developer Manual](#Developer-Manual)
-
-    * [Installation](##Installation)
-    * [Server](##Server)
-    * [Testing](##Testing)
-    * [API](##API)
-    * [Known Bugs](##Known-Bugs)
-    * [Future Development](##Future-Development)
+    * [Installation](#Installation)
+    * [Methods](##Methods)
+    * [Important Variables](##Important-Variables)
+    * [Bugs and Limitations](##Bugs-and-Limitations)
 
 # User Manual
 * Open the link to be directed to the Home page where you can begin the quiz by clicking "Start Quiz".  
