@@ -14,6 +14,25 @@
 The web application is currently running on a Heroku Server
 * https://movie-quiz-final.herokuapp.com/
 
+## Table of Contents
+* [Information Problem](##Information-Problem)
+* [Targets](##Targets)
+    * [Browsers](###Browsers)
+    * [Stakeholders](###Stakeholders)
+* [Data](##Data)
+    * [API](###API)
+    * [Libraries](###Libraries)
+    * [Library License](###Library-License)
+* [Strategies and Solutions](##Strategies-and-Solutions)
+* [Technical System Decision](##Technical-System-Decision)
+    * [Frontend](###Frontend)
+    * [Backend](###Backend)
+* [Has the Problem Been Addressed?](##Has-the-Problem-Been-Addressed?)
+* [Challenges](##Challenges)
+* [Future Work](##Future-Work)
+
+
+
 ## Information Problem
 There is a large selection of currently media avaialable on streaming services leading to Information Overload. This project seeks to solve this problem with a simple web application aimed at users seeking a movie to watch. Decision-making and discovery is hindered by information overload due to the sheer amount of content over multiple platforms. With this application the time spent deciding which movie to watch can be reduced with an easy to use quiz focusing on the user's mood. The ultimate goal of the application is to ease information overload with a lightwweight application to quickly recommend movies targeted by mood and preferences of the user. 
 
@@ -72,7 +91,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Strategies and Solutions
 
+
+
 ## Technical System Decision
+### Frontend
+HTML is used for application structure and application design. CSS is implemented for website styles and presentation.
+
+### Backend
+JavaScript is used to handle frontend user input and information retrieval from the API. The application runs scripts from the themoviedb-javascript-library are run to retrieve information from the database based on user clicks. The library utilizes JQuery for this purpose to sort and match metadata within the database to deliver results to the user. 
 
 ## Has the Problem Been Addressed?
 
@@ -87,7 +113,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     * Struggled to balance between functionality of our application and how it looked on the frontend
 
 ## Future Work
-* Display more metadata on each movie
 * Provide a cleaner and more visually attractive front-end for users
+* Add more variables for users to select to provide more specific recommendations
+* Allow more recommendations per result
+* Provide similar movies to results to allow more discovery
+* Display more metadata on each movie
+* Continue exploring libraries and API’s to improve the vision and efficiency of the application
+* Note where movies can be watched via streaming
+
 
 
