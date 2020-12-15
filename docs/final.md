@@ -17,8 +17,25 @@ The web application is currently running on a Heroku Server
 ## Information Problem
 * Information Overload
 
+There is a large selection 
+
 ## Identified stakeholders/target browsers:
-* 
+### Target Browsers:
+* Chrome 87
+* Firefox 83
+* Safari 14
+
+### Stakeholders
+
+Stakeholders include users of streaming services including but not limited to:
+* Amazon Prime Video
+* Disney+
+* HBO Max
+* Hulu
+* Netflix
+
+These streaming services themselves are also identified as stakeholders in that they provide the content users will engage with. [The Movie Database](https://www.themoviedb.org) serves as a stakeholder as they are providing the database being accessed by this web application.
+
 
 ## Data
 * Database containing info on movies
