@@ -29,7 +29,7 @@ Target Browsers:
 # Developer Manual 
 ## Installation 
 * Download everything and run locally via localhost 3000 with a server running or open index.html in a browser of your choice
-* The moviedb.js file contains the connections to The Movie Database API and methods utilized
+* The moviedb.js file contains the connections to The Movie Database API and methods to send user input
 
 ## Methods
 * For full descriptions of moviedb methods visit the wiki at https://github.com/cavestri/themoviedb-javascript-library
