@@ -2,13 +2,27 @@
 
 ## Description
 
-[Heroku](https://movie-quiz-final.herokuapp.com/index.html)
+
+
+Application is hosted on [Heroku](https://movie-quiz-final.herokuapp.com/index.html)
 
 Target Browsers:
+* Chrome 87
+* Firefox 83
+* Safari 14
 
-[User Manual Link](#User-Manual)
+## Table of Contents
 
-[Developer Manual Link](#Developer-Manual)
+* [User Manual](#User-Manual)
+
+* [Developer Manual](#Developer-Manual)
+
+    * [Installation](##Installation)
+    * [Server](##Server)
+    * [Testing](##Testing)
+    * [API](##API)
+    * [Known Bugs](##Known-Bugs)
+    * [Future Development](##Future-Development)
 
 # User Manual
 
