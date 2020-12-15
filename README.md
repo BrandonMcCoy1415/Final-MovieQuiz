@@ -2,7 +2,7 @@
 
 ## Description
 
-
+A quiz to generate movie suggestions to users based on responses to the survey using "The Movie Database" 
 
 Application is hosted on [Heroku](https://movie-quiz-final.herokuapp.com/index.html)
 
