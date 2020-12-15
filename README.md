@@ -12,12 +12,12 @@ Target Browsers:
 
 * [Developer Manual Link](#Developer-Manual)
 
-    > [Installation](##Installation)
-    > [Server](##Server)
-    > [Testing](##Testing)
-    > [API](##API)
-    > [Known Bugs](##Known-Bugs)
-    > [Future Development](##Future-Development)
+    * [Installation](##Installation)
+    * [Server](##Server)
+    * [Testing](##Testing)
+    * [API](##API)
+    * [Known Bugs](##Known-Bugs)
+    * [Future Development](##Future-Development)
 
 # User Manual
 
