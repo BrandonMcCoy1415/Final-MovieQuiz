@@ -1,8 +1,8 @@
 # Final Report
  
-## Working Title: What Movie to Watch Quiz
+## Working Title: WHICH MOVIE SHOULD YOU WATCH?
 
-## Team members: 
+## Team Members
 * Samantha Barlage
 * Chris Davis 
 * Conner Houtman
