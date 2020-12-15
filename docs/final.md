@@ -34,9 +34,27 @@ The primary stakeholders include users of streaming services including but not l
 
 These streaming services themselves are also identified as stakeholders in that they provide the content users will engage with. [The Movie Database](https://www.themoviedb.org) serves as a stakeholder as they are providing the database being accessed by this web application.
 
-
 ## Data
-* Database containing info on movies
+### API
+This project used The Movie Database (TMDb)
+* https://developers.themoviedb.org/3/getting-started/introduction
+
+### Libraries
+The application utilizes the The Movie DB (javascript library) 
+* Github Repository for [themoviedb-javascript-library](https://github.com/cavestri/themoviedb-javascript-library/) 
+* Credits to Franco Cavestri 
+
+### Library License
+
+The MIT License (MIT)
+
+Copyright (c) Franco Cavestri
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## Strategies and Solutions
 
