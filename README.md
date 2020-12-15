@@ -25,7 +25,7 @@ Target Browsers:
     * [Future Development](##Future-Development)
 
 # User Manual
-* Open the link to be directed to the Home page where you can begin the quix by clicking "Start Quiz".  
+* Open the link to be directed to the Home page where you can begin the quiz by clicking "Start Quiz".  
 * To answer the questions, select the checkbox next to your desired answer.
 * Use the "Next" and "Back" buttons to navigate through the quiz. You can see your results by hitting the "Show Results" button or retake the quiz by selecting "Take Quiz Again?".
 * Other pages that are included are About and Documentation pages. The About page explains why we decided to create this website, while the Documentation page provides more information on the application itself such as links to our code, the database along with the API key, and a javascript library by Franco Cavestri.
